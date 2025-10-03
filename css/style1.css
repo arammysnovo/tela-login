@@ -1,0 +1,205 @@
+/* Reset básico */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+    line-height: 1.6;
+}
+
+
+/* Container padrão */
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
+/* Header */
+
+header {
+    background-color: #111;
+    color: white;
+    padding: 30px 0;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 15px;
+}
+
+header nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    color: #00e676;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+header nav ul li a:hover {
+    color: #fff;
+}
+
+
+/* Seções */
+
+section {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+
+/* Títulos */
+
+section h2 {
+    font-size: 2rem;
+    color: #222;
+    margin-bottom: 20px;
+}
+
+section h3 {
+    font-size: 1.4rem;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    color: #444;
+}
+
+
+/* Parágrafos */
+
+section p {
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+/* Listas */
+
+ul {
+    list-style-type: disc;
+    padding-left: 20px;
+    text-align: left;
+    max-width: 800px;
+    margin: 0 auto 30px;
+}
+
+ul li {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+}
+
+
+/* Imagens */
+
+section img {
+    max-width: 100%;
+    height: auto;
+    margin-top: 30px;
+    border-radius: 8px;
+}
+
+
+/* Cards (usado para planos de treino e benefícios) */
+
+#beneficios ul,
+#planos ul {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+}
+
+
+/* Formulário */
+
+form {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+form label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+form input,
+form textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+}
+
+form textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+form button {
+    background-color: #00e676;
+    color: #fff;
+    border: none;
+    padding: 12px 20px;
+    font-size: 1rem;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+form button:hover {
+    background-color: #00c853;
+}
+
+
+/* Rodapé */
+
+footer {
+    background-color: #111;
+    color: #bbb;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 40px;
+}
+
+
+/* Responsivo */
+
+@media (max-width: 768px) {
+    header nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+    section h2 {
+        font-size: 1.6rem;
+    }
+    section h3 {
+        font-size: 1.2rem;
+    }
+}
